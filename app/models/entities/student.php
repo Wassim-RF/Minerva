@@ -5,7 +5,7 @@ require_once "User.php";
 class Student extends User {
     private int $class_id;
 
-    public function __construct(int $id = 0, string $name = "", string $email = "", string $password = "", int $class_id = 0) {
+    public function __construct(string $name = "", string $email = "", string $password = "", int $class_id = 0) {
         parent::__construct($id, $name, $email, $password, 'student');
         $this->class_id = $class_id;
     }
