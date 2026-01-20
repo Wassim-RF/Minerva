@@ -33,6 +33,6 @@
                     }
                 }
             }
-            include_once __DIR__ . '/../views/Error/404.php';
+            echo "404";
         }
     }
