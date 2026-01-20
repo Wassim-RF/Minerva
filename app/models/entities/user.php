@@ -1,5 +1,6 @@
 <?php 
-namespace App/Models/Entities
+namespace App\Models\Entities;
+
 class User{
     protected int $id;
     protected string $name;
