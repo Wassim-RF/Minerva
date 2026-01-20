@@ -1,17 +1,13 @@
 <?php
-namespace App\Models\Entities;
-require_once "User.php";
-use App\Models\Entities\User;
+    namespace App\Models\Entities;
 
-class Student extends User {
-    private int $class_id;
+    require_once "User.php";
+    
+    use App\Models\Entities\User;
 
-    public function __construct(string $name = "", string $email = "", string $password = "", int $class_id = 0) {
-        parent::__construct($id, $name, $email, $password, 'student');
-        $this->class_id = $class_id;
+    class Student extends User {
+
+        public function __construct(string $name, string $email, string $password) {
+            parent::__construct($name, $email, $password, 'student');
+        }
     }
-
-    public function getClassId(): int { return $this->class_id; }
-    public function setClassId(int $class_id): void { $this->class_id = $class_id; }
-}
-?>

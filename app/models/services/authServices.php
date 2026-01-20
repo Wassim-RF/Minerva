@@ -18,6 +18,7 @@
                 $_SESSION['error'] = [
                     'email' => "Email n'existe pas"
                 ];
+                header("Location: /login");
                 return null;
             };
 
