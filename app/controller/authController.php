@@ -2,7 +2,7 @@
     namespace App\Controller;
 
     require_once __DIR__ . '/../models/repositories/userRepositories.php';
-    require_once __DIR__ . '/../models/services/userServices.php';
+    require_once __DIR__ . '/../models/services/authServices.php';
 
     use App\Models\Repositories\UserRepositories;
     use App\Models\Services\AuthServices;
@@ -13,6 +13,10 @@
         public function __construct() {
             $userRepo = new UserRepositories();
             $this->authServices = new AuthServices($userRepo);
+        }
+
+        public function showLogin() {
+            include_once __DIR__ . '/../views/auth/login.php';
         }
 
         public function login() {

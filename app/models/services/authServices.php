@@ -13,18 +13,24 @@
         }
 
         public function login(string $email , string $password) {
-            $student = $this->userRepositories->findUserByEmail($email);
-            if (!$student) return null;
+            $user = $this->userRepositories->findUserByEmail($email);
+            if (!$user) {
+                $_SESSION['error'] = [
+                    'email' => "Email n'existe pas"
+                ];
+                return null;
+            };
 
-            if ($student) {
-                if(password_verify($password , $student['password'])) {
+            if ($user) {
+                if(password_verify($password , $user['password'])) {
                     if (session_status() === PHP_SESSION_NONE) {
                         session_start();
                     }
-                    $_SESSION['student'] = [
-                        'id' => $student['id'],
-                        'name' => $student['name'],
-                        'email' => $student['email']
+                    $_SESSION['user'] = [
+                        'id' => $user['id'],
+                        'name' => $user['name'],
+                        'email' => $user['email'],
+                        'role' => $user['role']
                     ];
                 }
             }
