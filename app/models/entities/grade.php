@@ -1,5 +1,5 @@
 <?php
-namespace App/Models/Entities
+namespace App\Models\Entities;
 
 class Grade {
     private int $id;

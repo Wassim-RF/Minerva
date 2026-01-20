@@ -1,6 +1,5 @@
 <?php
-namespace App/Models/Entities
-
+namespace App\Models\Entities;
 
 class Work {
     private int $id;
@@ -9,7 +8,7 @@ class Work {
     private ?string $file_path;
     private int $class_id;
 
-    public function __construct(string $title = "", string $description = "", ?string $file_path = null, int $class_id = 0) {
+    public function __construct(string $title, string $description = "", ?string $file_path = null, int $class_id = 0) {
         $this->title = $title;
         $this->description = $description;
         $this->file_path = $file_path;

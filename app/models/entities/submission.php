@@ -1,5 +1,5 @@
 <?php
-namespace App/Models/Entities
+namespace App\Models\Entities;
 
 class Submission {
     private int $id;
@@ -9,7 +9,7 @@ class Submission {
     private ?string $file_path;
     private string $submitted_at;
 
-    public function __construct(int $work_id = 0, int $student_id = 0, string $content = "", ?string $file_path = null, string $submitted_at = "") {
+    public function __construct(int $work_id, int $student_id, string $content, ?string $file_path, string $submitted_at ) {
         $this->work_id = $work_id;
         $this->student_id = $student_id;
         $this->content = $content;

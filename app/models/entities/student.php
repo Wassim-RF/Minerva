@@ -1,6 +1,7 @@
 <?php
-namespace App/Models/Entities
+namespace App\Models\Entities;
 require_once "User.php";
+use App\Models\Entities\User;
 
 class Student extends User {
     private int $class_id;

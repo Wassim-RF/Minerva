@@ -1,5 +1,5 @@
 <?php
-namespace App/Models/Entities
+namespace App\Models\Entities;
 
 class ChatMessage {
     private int $id;
