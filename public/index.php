@@ -18,6 +18,6 @@
     $router->add("GET" , "/register" , [AuthController::class , 'showRegister']);
     $router->add("POST" , "/login" , [AuthController::class , 'login']);
     $router->add("POST" , "/register" , [AuthController::class , 'register']);
-    $router->add("GET" , "/home" , [UserController::class , 'showTeacherDashboard']);
+    $router->add("GET" , "/teacher/dashboard" , [UserController::class , 'showTeacherDashboard']);
 
     $router->dispatch();
