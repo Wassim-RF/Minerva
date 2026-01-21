@@ -34,3 +34,43 @@
                         </div>
                     </div>
                 </div>
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-slate-100 flex flex-col">
+                    <div class="h-48 bg-gradient-to-br from-indigo-600 to-purple-500 flex items-center justify-center">
+                        <i class="fa-solid fa-book-open text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold mb-2">Histoire Contemporaine</h3>
+                        <p class="text-slate-400 text-sm mb-4">Histoire du 20ème siècle</p>
+                        <div class="flex items-center text-slate-400 text-sm mb-6">
+                            <i class="fa-solid fa-users mr-2"></i> 18 étudiants
+                        </div>
+                        <div class="flex gap-3 mt-auto">
+                            <button class="flex-grow bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold py-3 rounded-xl transition">Voir détails</button>
+                            <button class="w-12 h-12 flex items-center justify-center bg-indigo-50 text-indigo-600 rounded-xl hover:bg-indigo-100 transition">
+                                <i class="fa-regular fa-comment-dots text-lg"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-slate-100 flex flex-col">
+                    <div class="h-48 bg-gradient-to-br from-indigo-600 to-purple-500 flex items-center justify-center">
+                        <i class="fa-solid fa-book-open text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold mb-2">Littérature Française</h3>
+                        <p class="text-slate-400 text-sm mb-4">Littérature classique et moderne</p>
+                        <div class="flex items-center text-slate-400 text-sm mb-6">
+                            <i class="fa-solid fa-users mr-2"></i> 20 étudiants
+                        </div>
+                        <div class="flex gap-3 mt-auto">
+                            <button class="flex-grow bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold py-3 rounded-xl transition">Voir détails</button>
+                            <button class="w-12 h-12 flex items-center justify-center bg-indigo-50 text-indigo-600 rounded-xl hover:bg-indigo-100 transition">
+                                <i class="fa-regular fa-comment-dots text-lg"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
