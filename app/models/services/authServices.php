@@ -18,6 +18,7 @@
                 $_SESSION['error'] = [
                     'email' => "Email n'existe pas"
                 ];
+                header("Location: /login");
                 return null;
             };
 
@@ -31,6 +32,10 @@
                         'name' => $user['name'],
                         'email' => $user['email'],
                         'role' => $user['role']
+                    ];
+                } else {
+                    $_SESSION['error'] = [
+                        'password' => "Password est incorect"
                     ];
                 }
             }
