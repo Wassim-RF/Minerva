@@ -8,7 +8,7 @@
             require_once __DIR__ . '/../../views/layout/navbar.php' 
         ?>
 
-        <main class="w-[83%] p-10" id="mainbody">
+        <main class="w-[83%] ml-[17%] p-10" id="mainbody">
             <header class="flex justify-between items-center mb-10">
                 <div>
                     <h1 class="text-3xl font-bold text-gray-800">Mes Classes</h1>

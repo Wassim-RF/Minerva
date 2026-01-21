@@ -12,4 +12,8 @@
             require_once __DIR__ . '/../views/teacher/dashboard.php';
         }
         
+        public function showTeacherClasses() {
+            $uri = $_SERVER['REQUEST_URI'];
+            require_once __DIR__ . '/../views/teacher/class.php';
+        }
     }

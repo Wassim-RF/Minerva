@@ -15,15 +15,15 @@
     </div>
 
     <nav class="flex-1 px-4 space-y-2">
-        <a href="#" class="flex items-center gap-4 px-4 py-3 rounded-2xl transition-all duration-200 <?= strcmp($uri, "/{$_SESSION['user']['role']}/dashboard") === 0 ? 'bg-indigo-600 text-white shadow-lg shadow-indigo-200' : 'text-gray-500 hover:bg-indigo-50 hover:text-indigo-600' ?> nav_bar--link">
+        <a href="/<?= $_SESSION['user']['role'] ?>/dashboard" class="flex items-center gap-4 px-4 py-3 rounded-2xl transition-all duration-200 <?= strcmp($uri, "/{$_SESSION['user']['role']}/dashboard") === 0 ? 'bg-indigo-600 text-white shadow-lg shadow-indigo-200' : 'text-gray-500 hover:bg-indigo-50 hover:text-indigo-600' ?> nav_bar--link">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z" /></svg>
             <span class="font-medium nav_bar--text">Accueil</span>
         </a>
-        <a href="#" class="flex items-center gap-4 px-4 py-3 rounded-2xl transition-all duration-200 <?= strcmp($uri, "/class") === 0 ? 'bg-indigo-600 text-white shadow-lg shadow-indigo-200' : 'text-gray-500 hover:bg-indigo-50 hover:text-indigo-600' ?></a> nav_bar--link">
+        <a href="/<?= $_SESSION['user']['role'] ?>/classes" class="flex items-center gap-4 px-4 py-3 rounded-2xl transition-all duration-200 <?= strcmp($uri, "/{$_SESSION['user']['role']}/classes") === 0 ? 'bg-indigo-600 text-white shadow-lg shadow-indigo-200' : 'text-gray-500 hover:bg-indigo-50 hover:text-indigo-600' ?></a> nav_bar--link">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2" /></svg>            
             <span class="font-medium nav_bar--text">Classes</span>
         </a>
-        <a href="#" class="flex items-center gap-4 px-4 py-3 rounded-2xl transition-all duration-200 <?= strcmp($uri, "/chat") === 0 ? 'bg-indigo-600 text-white shadow-lg shadow-indigo-200' : 'text-gray-500 hover:bg-indigo-50 hover:text-indigo-600' ?></a> nav_bar--link">
+        <a href="#" class="flex items-center gap-4 px-4 py-3 rounded-2xl transition-all duration-200 <?= strcmp($uri, "{$_SESSION['user']['role']}/chat") === 0 ? 'bg-indigo-600 text-white shadow-lg shadow-indigo-200' : 'text-gray-500 hover:bg-indigo-50 hover:text-indigo-600' ?></a> nav_bar--link">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2" /></svg>
             <span class="font-medium nav_bar--text">Chat</span>
         </a>
