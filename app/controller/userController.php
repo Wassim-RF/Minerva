@@ -6,4 +6,9 @@
             header("Location: /login");
             exit();
         }
+
+        public function showTeacherDashboard() {
+            require_once __DIR__ . '/../views/teacher/dashboard.php';
+        }
+        
     }
