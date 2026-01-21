@@ -50,4 +50,36 @@
                     </div>
                 </section>
 
-                
+                <section>
+                    <h2 class="text-xl font-bold mb-4">Notes récentes</h2>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 space-y-4">
+                        
+                        <div class="flex justify-between items-center p-4 border border-slate-50 rounded-xl">
+                            <div>
+                                <div class="font-semibold text-slate-800">Mathématiques</div>
+                                <div class="text-xs text-slate-400">15 Jan</div>
+                            </div>
+                            <div class="text-xl font-bold text-indigo-900">18/20</div>
+                        </div>
+
+                        <div class="flex justify-between items-center p-4 border border-slate-50 rounded-xl">
+                            <div>
+                                <div class="font-semibold text-slate-800">Histoire</div>
+                                <div class="text-xs text-slate-400">12 Jan</div>
+                            </div>
+                            <div class="text-xl font-bold text-indigo-900">15/20</div>
+                        </div>
+
+                        <div class="flex justify-between items-center p-4 border border-slate-50 rounded-xl">
+                            <div>
+                                <div class="font-semibold text-slate-800">Littérature</div>
+                                <div class="text-xs text-slate-400">10 Jan</div>
+                            </div>
+                            <div class="text-xl font-bold text-indigo-900">17/20</div>
+                        </div>
+
+                    </div>
+                </section>
+
+            </div>
+        </main>
