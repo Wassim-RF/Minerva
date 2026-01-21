@@ -33,6 +33,10 @@
                         'email' => $user['email'],
                         'role' => $user['role']
                     ];
+                } else {
+                    $_SESSION['error'] = [
+                        'password' => "Password est incorect"
+                    ];
                 }
             }
         }
