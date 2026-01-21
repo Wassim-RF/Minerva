@@ -18,6 +18,9 @@
         public function showLogin() {
             include_once __DIR__ . '/../views/auth/login.php';
         }
+        public function showRegister() {
+            include_once __DIR__ . '/../views/auth/register.php';
+        }
 
         public function login() {
             if ($_SERVER['REQUEST_METHOD'] === 'POST') {

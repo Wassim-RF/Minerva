@@ -45,6 +45,9 @@
         <a href="/register" class="w-full text-center border-2 border-blue-600 text-blue-600 text-lg font-semibold py-3 rounded-xl hover:bg-blue-50 transition-all duration-200">
             Créer un compte
         </a>
+        <p class="text-[10px] text-center text-gray-400 px-5">
+            En s'inscrivant, vous acceptez nos <a href="#" class="underline">Conditions d'utilisation</a> et notre <a href="#" class="underline">Politique de confidentialité</a>.
+        </p>
     </div>
 </body>
 </html>
