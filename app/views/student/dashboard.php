@@ -1,10 +1,18 @@
-<main class="w-[83%] p-10">
+<?php 
+    require_once __DIR__ . '/../../views/layout/head.php' 
+?>
+<body class="bg-slate-50 font-sans text-slate-900">
+
+<?php 
+    require_once __DIR__ . '/../../views/layout/navbar.php' 
+?>
+<main class="w-[83%] p-10" id="mainbody">
             <header class="mb-8">
-                <h1 class="text-3xl font-bold">Bienvenue, Étudiant</h1>
+                <h1 class="text-3xl font-bold">Bienvenue, a dik l 3ebd</h1>
                 <p class="text-slate-500">Voici un aperçu de vos activités</p>
             </header>
 
-            <div class="grid grid-cols-3 gap-6 mb-8">
+            <div class="grid grid-cols-3 gap-6 mb-8" >
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
                     <div class="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center text-white mb-4">
                         <i class="fa-solid fa-clipboard-list text-xl"></i>
