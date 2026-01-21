@@ -15,6 +15,7 @@
 
     $router->add("GET" , "/" , [UserController::class , 'index']);
     $router->add("GET" , "/login" , [AuthController::class , 'showLogin']);
+    $router->add("GET" , "/register" , [AuthController::class , 'showRegister']);
     $router->add("POST" , "/login" , [AuthController::class , 'login']);
 
     $router->dispatch();
