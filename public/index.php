@@ -21,5 +21,6 @@
     $router->add("GET" , "/teacher/dashboard" , [UserController::class , 'showTeacherDashboard']);
     $router->add("GET" , "/teacher/classes" , [UserController::class , 'showTeacherClasses']);
     $router->add("GET" , "/teacher/classes/add" , [UserController::class , 'showTeacherAddClasses']);
+    $router->add("GET" , "/teacher/classes/show" , [UserController::class , 'showOneClasse']);
 
     $router->dispatch();

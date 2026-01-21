@@ -6,21 +6,16 @@
 
     <?php require_once __DIR__ . '/../../views/layout/navbar.php'; ?>
 
-    <main class="w-[83%] ml-[17%] p-10">
-        
-        <header class="flex justify-between items-center mb-8">
+    <main class="w-[83%] ml-[17%] p-10" id="mainbody">
+        <header class="flex flex-col gap-4 mb-8">
+            <div class="flex items-center gap-2 text-blue-600 mb-2 cursor-pointer hover:text-blue-800 transition">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                <a href="dashboard.php" class="text-sm font-medium">Retour au tableau de bord</a>
+            </div>
             <div>
                 <h1 class="text-3xl font-bold text-gray-800">Ajouter une classe</h1>
                 <p class="text-gray-500">Créer et consulter vos classes</p>
             </div>
-
-            <a href="/teacher/classes" 
-               class="flex items-center gap-2 px-5 py-2.5 rounded-xl border border-gray-300 bg-white text-gray-700 font-medium hover:bg-gray-50 hover:text-red-600 transition-colors shadow-sm">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M18 6L6 18M6 6l12 12"></path>
-                </svg>
-                Quitter
-            </a>
         </header>
 
         <div class="grid grid-cols-3 gap-6">
