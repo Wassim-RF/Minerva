@@ -3,6 +3,7 @@
 
     require_once __DIR__ . '/../repositories/userRepositories.php';
 
+    use App\Models\Entities\Teacher;
     use App\Models\Repositories\UserRepositories;
 
     class AuthServices {
@@ -39,5 +40,29 @@
                     ];
                 }
             }
+        }
+
+        public function register(string $name , string $email , string $password) {
+            $user = $this->userRepositories->findUserByEmail($email);
+            if ($user) {
+                $_SESSION['error'] = [
+                    'email' => "Email existant"
+                ];
+                header("Location: /register");
+                return null;
+            };
+
+            $user = new Teacher($name , $email , $password);
+
+            $this->userRepositories->createTeacher($user);
+            if (session_status() === PHP_SESSION_NONE) {
+                session_start();
+            }
+            $_SESSION['user'] = [
+                'id' => $this->userRepositories->lastInseredId(),
+                'name' => $name,
+                'email' => $email,
+                'role' => "teacher"
+            ];
         }
     }

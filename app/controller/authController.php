@@ -33,4 +33,24 @@
                 }
             }
         }
+
+        public function register() {
+            if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+                $name = $_POST['name_register--input'];
+                $email = $_POST['email_register--input'];
+                $password = $_POST['password_register--input'];
+                $passwordConfirm = $_POST['password_register_confirm--input'];
+                if ($password !== $passwordConfirm) {
+                    $_SESSION['error'] = [
+                        'password' => "Les mots de passes sont incoheront"
+                    ];
+                    header("Location: /register");
+                    return null;
+                }
+                $password = password_hash($password , PASSWORD_DEFAULT);
+                $this->authServices->register($name , $email , $password);
+                header("Location: /home");
+                exit();
+            }
+        }
     }

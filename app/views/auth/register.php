@@ -12,22 +12,22 @@
         <form method="POST" action="/register" class="flex flex-col gap-5">
             <div class="flex flex-col gap-2">
                 <label class="text-sm font-medium text-gray-700">Nom complet <span class="text-red-500">*</span></label>
-                <input type="text" placeholder="Ex: Ahmed Alami" class="outline-none w-full border border-gray-300 p-[3%] rounded-xl transition-all duration-300 focus:border-[#6366F1] focus:ring-4 focus:ring-blue-100" required name="full_name">
+                <input type="text" placeholder="Ex: Ahmed Alami" class="outline-none w-full border border-gray-300 p-[3%] rounded-xl transition-all duration-300 focus:border-[#6366F1] focus:ring-4 focus:ring-blue-100" required name="name_register--input">
             </div>
 
             <div class="flex flex-col gap-2">
                 <label class="text-sm font-medium text-gray-700">Adresse email <span class="text-red-500">*</span></label>
-                <input type="email" placeholder="exemple@mail.com" class="outline-none w-full border border-gray-300 p-[3%] rounded-xl transition-all duration-300 focus:border-[#6366F1] focus:ring-4 focus:ring-blue-100" required name="email_register">
+                <input type="email" placeholder="exemple@mail.com" class="outline-none w-full border border-gray-300 p-[3%] rounded-xl transition-all duration-300 focus:border-[#6366F1] focus:ring-4 focus:ring-blue-100" required name="email_register--input">
             </div>
 
             <div class="flex flex-col gap-2">
                 <label class="text-sm font-medium text-gray-700">Mot de passe <span class="text-red-500">*</span></label>
-                <input type="password" placeholder="••••••••" class="outline-none w-full border border-gray-300 p-[3%] rounded-xl transition-all duration-300 focus:border-[#6366F1] focus:ring-4 focus:ring-blue-100" required name="password_register">
+                <input type="password" placeholder="••••••••" class="outline-none w-full border border-gray-300 p-[3%] rounded-xl transition-all duration-300 focus:border-[#6366F1] focus:ring-4 focus:ring-blue-100" required name="password_register--input">
             </div>
 
             <div class="flex flex-col gap-2">
                 <label class="text-sm font-medium text-gray-700">Confirmer le mot de passe <span class="text-red-500">*</span></label>
-                <input type="password" placeholder="••••••••" class="outline-none w-full border border-gray-300 p-[3%] rounded-xl transition-all duration-300 focus:border-[#6366F1] focus:ring-4 focus:ring-blue-100" required name="password_confirm">
+                <input type="password" placeholder="••••••••" class="outline-none w-full border border-gray-300 p-[3%] rounded-xl transition-all duration-300 focus:border-[#6366F1] focus:ring-4 focus:ring-blue-100" required name="password_register_confirm--input">
             </div>
 
             <button type="submit" class="w-full cursor-pointer bg-blue-600 text-white text-lg font-semibold py-3 rounded-xl shadow-lg hover:bg-blue-700 active:scale-[0.98] transition-all duration-200 mt-2">
