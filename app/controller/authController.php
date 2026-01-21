@@ -27,10 +27,8 @@
                 $email_input = $_POST['email_login--input'];
                 $password_input = $_POST['password_login--input'];
                 $student = $this->authServices->login($email_input , $password_input);
-                if ($student !== null) {
-                    header("Location: /home");
-                    exit();
-                }
+                header("Location: /{$_SESSION['user']['role']}/dashboard");
+                exit();
             }
         }
 

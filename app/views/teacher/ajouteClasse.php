@@ -10,7 +10,7 @@
         <header class="flex flex-col gap-4 mb-8">
             <div class="flex items-center gap-2 text-blue-600 mb-2 cursor-pointer hover:text-blue-800 transition">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
-                <a href="dashboard.php" class="text-sm font-medium">Retour au tableau de bord</a>
+                <a href="/teacher/classes" class="text-sm font-medium">Retour au tableau de bord</a>
             </div>
             <div>
                 <h1 class="text-3xl font-bold text-gray-800">Ajouter une classe</h1>
@@ -23,7 +23,7 @@
             <div class="col-span-2 bg-white p-10 rounded-3xl shadow-sm border border-gray-100">
                 <h2 class="text-xl font-bold text-gray-800 mb-6">Nouvelle classe</h2>
 
-                <form action="/classes/store" method="POST" class="h-full flex flex-col">
+                <form action="/classes/add" method="POST" class="h-full flex flex-col">
 
                     <div>
                         <label class="block text-sm font-semibold text-gray-700 mb-2">
@@ -31,7 +31,7 @@
                         </label>
                         <input
                             type="text"
-                            name="name"
+                            name="class_name--input"
                             placeholder="Ex : Mathématiques"
                             class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:outline-none"
                             required
