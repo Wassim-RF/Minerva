@@ -17,7 +17,7 @@
             <div class="grid grid-cols-3 gap-6">
                 <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100">
                     <div class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center mb-6 text-white text-xl"> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0M3 6v13m9-13v13m9-13v13"/></svg></div>
-                    <div class="text-3xl font-bold text-gray-900 leading-none">3</div>
+                    <div class="text-3xl font-bold text-gray-900 leading-none"><?= $classNum ?></div>
                     <div class="text-gray-400 mt-2 font-medium">Classes</div>
                 </div>
 

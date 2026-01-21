@@ -18,4 +18,12 @@
             $class = new ClassRoom($name , $teacher_id);
             $this->classRepositories->createClass($class);
         }
+
+        public function showClassByTeacher(int $teacher_id) {
+            return $this->classRepositories->showClassByTeacherId($teacher_id);
+        }
+
+        public function classNumberByTeacherId(int $teacher_id) {
+            return $this->classRepositories->classNumberByTeacherId($teacher_id);
+        }
     }
