@@ -8,54 +8,29 @@
     require_once __DIR__ . '/../../views/layout/navbar.php' 
 ?>
 
-<main class="w-[83%] p-10">
-            <header class="mb-8">
-                <h1 class="text-3xl font-bold">Bienvenue, Étudiant</h1>
-                <p class="text-slate-500">Voici un aperçu de vos activités</p>
+<main class="w-[83%] p-10" id="mainbody">
+            <header class="mb-10">
+                <h1 class="text-3xl font-bold tracking-tight">Mes Classes</h1>
+                <p class="text-slate-500 mt-1">Gérez vos classes et étudiants</p>
             </header>
 
-            <div class="grid grid-cols-3 gap-6 mb-8">
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
-                    <div class="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center text-white mb-4">
-                        <i class="fa-solid fa-clipboard-list text-xl"></i>
-                    </div>
-                    <div class="text-3xl font-bold">2</div>
-                    <div class="text-slate-400 text-sm">Travaux à faire</div>
-                </div>
-
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
-                    <div class="w-12 h-12 bg-purple-500 rounded-xl flex items-center justify-center text-white mb-4">
-                        <i class="fa-solid fa-medal text-xl"></i>
-                    </div>
-                    <div class="text-3xl font-bold">16.5/20</div>
-                    <div class="text-slate-400 text-sm">Moyenne générale</div>
-                </div>
-
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
-                    <div class="w-12 h-12 bg-emerald-500 rounded-xl flex items-center justify-center text-white mb-4">
-                        <i class="fa-solid fa-calendar-check text-xl"></i>
-                    </div>
-                    <div class="text-3xl font-bold">95%</div>
-                    <div class="text-slate-400 text-sm">Taux de présence</div>
-                </div>
-            </div>
-
-            <div class="grid grid-cols-2 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
-                <section>
-                    <h2 class="text-xl font-bold mb-4">Ma Classe</h2>
-                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
-                        <div class="bg-indigo-50 p-6 rounded-xl border border-indigo-100">
-                            <div class="w-12 h-12 bg-indigo-900 rounded-lg flex items-center justify-center text-white mb-4">
-                                <i class="fa-solid fa-book-open"></i>
-                            </div>
-                            <h3 class="text-xl font-bold">Mathématiques Avancées</h3>
-                            <p class="text-slate-400 text-sm mb-6">Cours de mathématiques niveau universitaire</p>
-                            
-                            <div class="flex items-center gap-4 text-sm">
-                                <span class="bg-white px-3 py-1 rounded-full border border-slate-200 text-slate-600">24 élèves</span>
-                                <span class="text-slate-400">Enseignant: <span class="text-slate-600">Marie Dubois</span></span>
-                            </div>
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-slate-100 flex flex-col">
+                    <div class="h-48 bg-gradient-to-br from-indigo-600 to-purple-500 flex items-center justify-center">
+                        <i class="fa-solid fa-book-open text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold mb-2">Mathématiques Avancées</h3>
+                        <p class="text-slate-400 text-sm mb-4">Cours de mathématiques niveau universitaire</p>
+                        <div class="flex items-center text-slate-400 text-sm mb-6">
+                            <i class="fa-solid fa-users mr-2"></i> 24 étudiants
+                        </div>
+                        <div class="flex gap-3 mt-auto">
+                            <button class="flex-grow bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold py-3 rounded-xl transition">Voir détails</button>
+                            <button class="w-12 h-12 flex items-center justify-center bg-indigo-50 text-indigo-600 rounded-xl hover:bg-indigo-100 transition">
+                                <i class="fa-regular fa-comment-dots text-lg"></i>
+                            </button>
                         </div>
                     </div>
-                </section>
+                </div>
