@@ -23,4 +23,10 @@
                 exit();
             }
         }
+
+        public function showTeacherClasses() {
+            $uri = $_SERVER['REQUEST_URI'];
+            $classes = $this->classServices->showClassByTeacher((int) $_SESSION['user']['id']);
+            require_once __DIR__ . '/../views/teacher/class.php';
+        }
     }

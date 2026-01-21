@@ -26,4 +26,18 @@
             $classRoom->setId($id);
             return $classRoom;
         }
+
+        public function showClassByTeacherId(int $teacher_id) {
+            $sql = "SELECT * FROM classes WHERE teacher_id = ?";
+            $stmt = $this->pdo->prepare($sql);
+            $stmt->execute([$teacher_id]);
+            return $stmt->fetchAll(PDO::FETCH_ASSOC);
+        }
+
+        public function classNumberByTeacherId(int $teacher_id) {
+            $sql = "SELECT COUNT(*) FROM classes WHERE teacher_id = ?";
+            $stmt = $this->pdo->prepare($sql);
+            $stmt->execute([$teacher_id]);
+            return $stmt->fetchColumn();
+        }
     }
