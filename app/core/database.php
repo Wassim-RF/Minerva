@@ -15,7 +15,7 @@
         private function __construct() {
             $dbConfig = DBConfig::db();
             try {
-                $dsn = "mysql:host={$dbConfig['host']};dbname={$dbConfig['dbname']};charset={$dbConfig['charset']}";
+                $dsn = "mysql:host={$dbConfig['host']};port={$dbConfig['port']};dbname={$dbConfig['dbname']};charset={$dbConfig['charset']}";
                 $this->pdo = new PDO(
                     $dsn,
                     $dbConfig['user'],
