@@ -1,8 +1,3 @@
-
-
-
-
-
 <main class="w-[83%] p-10">
             <header class="mb-8">
                 <h1 class="text-3xl font-bold">Bienvenue, Étudiant</h1>
@@ -35,3 +30,24 @@
                 </div>
             </div>
 
+            <div class="grid grid-cols-2 gap-8">
+                
+                <section>
+                    <h2 class="text-xl font-bold mb-4">Ma Classe</h2>
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                        <div class="bg-indigo-50 p-6 rounded-xl border border-indigo-100">
+                            <div class="w-12 h-12 bg-indigo-900 rounded-lg flex items-center justify-center text-white mb-4">
+                                <i class="fa-solid fa-book-open"></i>
+                            </div>
+                            <h3 class="text-xl font-bold">Mathématiques Avancées</h3>
+                            <p class="text-slate-400 text-sm mb-6">Cours de mathématiques niveau universitaire</p>
+                            
+                            <div class="flex items-center gap-4 text-sm">
+                                <span class="bg-white px-3 py-1 rounded-full border border-slate-200 text-slate-600">24 élèves</span>
+                                <span class="text-slate-400">Enseignant: <span class="text-slate-600">Marie Dubois</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                
