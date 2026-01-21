@@ -14,9 +14,9 @@
                     <h1 class="text-3xl font-bold text-gray-800">Mes Classes</h1>
                     <p class="text-gray-500">Gérez vos classes et vos étudiants</p>
                 </div>
-                <button class="bg-[#1e3a8a] hover:bg-blue-900 text-white px-6 py-3 rounded-xl font-medium transition flex items-center shadow-lg">
+                <a href="/teacher/classes/add" class="bg-[#1e3a8a] hover:bg-blue-900 text-white px-6 py-3 rounded-xl font-medium transition flex items-center shadow-lg">
                     <span class="mr-2">+</span> Créer une classe
-                </button>
+                </a>
             </header>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
