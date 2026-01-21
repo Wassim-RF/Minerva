@@ -6,10 +6,12 @@
     require_once __DIR__ . '/../app/core/router.php';
     require_once __DIR__ . '/../app/controller/userController.php';
     require_once __DIR__ . '/../app/controller/authController.php';
+    require_once __DIR__ . '/../app/controller/classController.php';
 
     use App\Core\Router;
     use App\Controller\UserController;
     use App\Controller\AuthController;
+    use App\Controller\ClassController;
 
     $router = new Router();
 
@@ -22,5 +24,6 @@
     $router->add("GET" , "/teacher/classes" , [UserController::class , 'showTeacherClasses']);
     $router->add("GET" , "/teacher/classes/add" , [UserController::class , 'showTeacherAddClasses']);
     $router->add("GET" , "/teacher/classes/show" , [UserController::class , 'showOneClasse']);
+    $router->add("POST" , "/classes/add" , [ClassController::class , 'addNewClass']);
 
     $router->dispatch();
