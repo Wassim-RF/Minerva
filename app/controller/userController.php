@@ -23,8 +23,9 @@
 
         public function showTeacherDashboard() {
             $uri = $_SERVER['REQUEST_URI'];
+            unset($_SESSION['class']);
             $classNum = $this->classServices->classNumberByTeacherId((int) $_SESSION['user']['id']);
-            
+
             require_once __DIR__ . '/../views/teacher/dashboard.php';
         }
 
@@ -34,6 +35,7 @@
         }
 
         public function showOneClasse() {
+            $_SESSION['class']['id'] = $_GET['id'];
             require_once __DIR__ . '/../views/teacher/showClasse.php';
         }
     }
