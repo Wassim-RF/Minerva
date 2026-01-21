@@ -5,11 +5,10 @@
     <div class="flex min-h-screen">
         
         <?php 
-            // Assurez-vous que navbar.php contient une balise <aside class="w-[17%]">
             require_once __DIR__ . '/../../views/layout/navbar.php' 
         ?>
 
-        <main class="w-[83%] p-10" id="mainbody">
+        <main class="w-[83%] ml-[17%] p-10" id="mainbody">
             <header class="mb-8">
                 <h1 class="text-3xl font-bold text-gray-800"> Acceuil</h1>
                 <p class="text-gray-500">Vue d'ensemble de vos cours et étudiants</p>

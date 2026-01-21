@@ -18,7 +18,8 @@ export function minimizeNavBar() {
         lnk.classList.add("justify-center")
     })
     navBar.classList.replace("w-[17%]" , "w-[5%]");
-    // main_body.classList.replace("w-[83%]" , "w-[95%]");
+    main_body.classList.replace("w-[83%]" , "w-[95%]");
+    main_body.classList.replace("ml-[17%]" , "ml-[5%]");
     site_name.classList.replace("block" , "hidden");
     logout_resume.classList.replace("hidden" , "flex");
     logout_complet.classList.replace("flex" , "hidden")
@@ -44,7 +45,8 @@ export function elargedNavBar() {
         lnk.classList.remove("justify-center")
     })
     navBar.classList.replace("w-[5%]" , "w-[17%]");
-    // main_body.classList.replace("w-[95%]" , "w-[83%]");
+    main_body.classList.replace("w-[95%]" , "w-[83%]");
+    main_body.classList.replace("ml-[5%]" , "ml-[17%]");
     site_name.classList.replace("hidden" , "block");
     logout_resume.classList.replace("flex" , "hidden");
     logout_complet.classList.replace("hidden" , "flex")

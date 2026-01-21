@@ -49,7 +49,7 @@
                 }
                 $password = password_hash($password , PASSWORD_DEFAULT);
                 $this->authServices->register($name , $email , $password);
-                header("Location: /home");
+                header("Location: /{$_SESSION['user']['role']}/dashboard");
                 exit();
             }
         }
