@@ -36,8 +36,10 @@
                             </span>
                         </div>
                         <div class="flex gap-2">
-                            <a href="/teacher/classes/show" class="bg-gray-100 hover:bg-gray-200 text-gray-700 py-2 rounded-xl font-semibold transition flex justify-center items-center w-full">Voir détails</a>
-                            <button class="w-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center hover:bg-blue-100 transition">💬</button>
+                            <a href="/teacher/classes/show?id=<?= $classe['id'] ?>" class="bg-gray-100 hover:bg-gray-200 text-gray-700 py-2 rounded-xl font-semibold transition flex justify-center items-center w-full">Voir détails</a>
+                            <a href="#" class="w-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center hover:bg-blue-100 transition">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21.25a9.25 9.25 0 1 0-8.307-5.177c.108.22.144.468.089.706l-.816 3.536a.6.6 0 0 0 .72.72l3.535-.817a1.06 1.06 0 0 1 .706.09A9.2 9.2 0 0 0 12 21.25M7.97 9.886h8.06m-8.06 4.228h5.748"/></svg>
+                            </a>
                         </div>
                     </div>
                 </div>

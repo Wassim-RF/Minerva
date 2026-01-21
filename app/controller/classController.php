@@ -26,7 +26,12 @@
 
         public function showTeacherClasses() {
             $uri = $_SERVER['REQUEST_URI'];
+            unset($_SESSION['class']);
             $classes = $this->classServices->showClassByTeacher((int) $_SESSION['user']['id']);
             require_once __DIR__ . '/../views/teacher/class.php';
+        }
+
+        public function showAjouteStudent() {
+            require_once __DIR__ . '/../views/teacher/ajouteStudent.php';
         }
     }

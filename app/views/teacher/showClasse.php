@@ -15,9 +15,9 @@
                     <h1 class="text-3xl font-bold text-gray-800">Classe : Mathématiques</h1>
                     <p class="text-gray-500">Gérez vos étudiants et le contenu du cours</p>
                 </div>
-                <button class="bg-blue-600 text-white px-6 py-2.5 rounded-xl font-medium hover:bg-blue-700 transition shadow-sm">
+                <a href="/teacher/classe/ajouteStudent" class="bg-blue-600 text-white px-6 py-2.5 rounded-xl font-medium hover:bg-blue-700 transition shadow-sm">
                     + Ajouter un étudiant
-                </button>
+                </a>
             </header>
 
             <div class="grid grid-cols-4 gap-6 mb-8">

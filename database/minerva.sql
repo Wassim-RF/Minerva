@@ -88,3 +88,6 @@ CREATE TABLE IF NOT EXISTS chat_messages (
     FOREIGN KEY (class_id) REFERENCES classes(id),
     FOREIGN KEY (user_id) REFERENCES users(id)
 );
+
+--@block
+SELECT DISTINCT u.id, u.name FROM users u JOIN class_students cs ON u.id = cs.student_id JOIN classes c ON cs.class_id = c.id WHERE c.teacher_id = 5 AND u.role = 'student';
