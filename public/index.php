@@ -22,6 +22,7 @@
     $router->add("GET" , "/register" , [AuthController::class , 'showRegister']);
     $router->add("POST" , "/login" , [AuthController::class , 'login']);
     $router->add("POST" , "/register" , [AuthController::class , 'register']);
+    $router->add("POST" , "/logout" , [AuthController::class , 'logout']);
     $router->add("GET" , "/teacher/dashboard" , [UserController::class , 'showTeacherDashboard']);
     $router->add("GET" , "/teacher/classes" , [ClassController::class , 'showTeacherClasses']);
     $router->add("GET" , "/teacher/classes/add" , [UserController::class , 'showTeacherAddClasses']);
