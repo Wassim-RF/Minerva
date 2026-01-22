@@ -32,4 +32,10 @@
                 exit();
             }
         }
+
+        public function showAddTravaille() {
+            if ($_SESSION['user']['role'] === 'teacher') {
+                require_once __DIR__ . '/../views/teacher/donnerTravaille.php';
+            }
+        }
     }
