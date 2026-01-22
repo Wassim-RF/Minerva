@@ -15,9 +15,18 @@
                     <h1 class="text-3xl font-bold text-gray-800">Classe : Mathématiques</h1>
                     <p class="text-gray-500">Gérez vos étudiants et le contenu du cours</p>
                 </div>
-                <a href="/teacher/classe/ajouteStudent" class="bg-blue-600 text-white px-6 py-2.5 rounded-xl font-medium hover:bg-blue-700 transition shadow-sm">
-                    + Ajouter un étudiant
-                </a>
+                
+                <div class="flex gap-4">
+                    <a href="/teacher/classe/donnerTravail" class="bg-orange-600 text-white px-6 py-2.5 rounded-xl font-medium hover:bg-orange-700 transition shadow-sm flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
+                        Donner un travail
+                    </a>
+
+                    <a href="/teacher/classe/ajouteStudent" class="bg-blue-600 text-white px-6 py-2.5 rounded-xl font-medium hover:bg-blue-700 transition shadow-sm flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="16" y1="11" x2="22" y2="11"/></svg>
+                        Ajouter un étudiant
+                    </a>
+                </div>
             </header>
 
             <div class="grid grid-cols-4 gap-6 mb-8">
