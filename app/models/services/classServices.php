@@ -1,7 +1,7 @@
 <?php
     namespace App\Models\Services;
 
-    require_once __DIR__ . '/../repositories/classReposeteries.php';
+    require_once __DIR__ . '/../repositories/classRepositories.php';
     require_once __DIR__ . '/../entities/classroom.php';
 
     use App\Models\Entities\ClassRoom;
@@ -24,11 +24,11 @@
         }
 
         public function classNumberByTeacherId(int $teacher_id) {
-            return $this->classRepositories->classNumberByTeacherId($teacher_id);
+            return $this->classReposetories->classNumberByTeacherId($teacher_id);
         }
 
         public function getStudentClass(int $studentId): array
         {
-            return $this->classRepo->getClassMembersByStudent($studentId);
+            return $this->classRepositories->getClassMembersByStudent($studentId);
         }
     }
