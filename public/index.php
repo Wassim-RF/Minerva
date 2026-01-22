@@ -34,5 +34,6 @@
     $router->add("POST" , "/teacher/createStudent" , [TeacherController::class , 'ajouteNewStudent']);
     $router->add("GET" , "/student/dashboard" , [StudentController::class , 'showStudentDashboard']);
     $router->add("GET" , "/student/classes" , [StudentController::class , 'showStudentClasses']);
+    $router->add("GET" , "/teacher/classe/donnerTravail" , [TeacherController::class , 'showAddTravaille']);
 
     $router->dispatch();

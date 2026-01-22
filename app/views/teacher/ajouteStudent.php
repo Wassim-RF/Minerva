@@ -10,7 +10,7 @@
         <header class="flex flex-col gap-4 mb-8">
             <div class="flex items-center gap-2 text-blue-600 mb-2 cursor-pointer hover:text-blue-800 transition">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
-                <a href="/teacher/classes/show" class="text-sm font-medium">Retour à la liste</a>
+                <a href="/teacher/classes/show?id=<?= $_SESSION['class']['id'] ?>" class="text-sm font-medium">Retour à la liste</a>
             </div>
             <div>
                 <h1 class="text-3xl font-bold text-gray-800">Ajouter un Étudiant</h1>
