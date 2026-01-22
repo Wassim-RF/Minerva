@@ -26,4 +26,9 @@
         public function classNumberByTeacherId(int $teacher_id) {
             return $this->classRepositories->classNumberByTeacherId($teacher_id);
         }
+
+        public function getStudentClass(int $studentId): array
+        {
+            return $this->classRepo->getClassMembersByStudent($studentId);
+        }
     }
