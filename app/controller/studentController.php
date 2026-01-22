@@ -1,5 +1,19 @@
 <?php  
-    namespace App\Controller;
+namespace App\Controller;
+
+use App\Models\Repositories\ClassRepositories;
+use App\Models\Services\ClassServices;
+
+require_once __DIR__ . '/../../models/repositories/classRespositories.php';
+require_once __DIR__ . '/../../models/services/classServices.php';
+
+$classRepo = new ClassRepositories();
+$classService = new ClassServices($classRepo);
+
+// récupère la classe de l’étudiant connecté
+$classes = $classService->getStudentClass($_SESSION['user']['id']);
+?>
+
 
     class StudentController {
         public function showStudentDashboard() {
