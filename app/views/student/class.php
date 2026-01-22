@@ -8,7 +8,7 @@
     require_once __DIR__ . '/../../views/layout/navbar.php' 
 ?>
 
-<main class="w-[83%] p-10" id="mainbody">
+<main class="w-[83%] ml-[17%] p-10" id="mainbody">
             <header class="mb-10">
                 <h1 class="text-3xl font-bold tracking-tight">Mes Classes</h1>
                 <p class="text-slate-500 mt-1">Gérez vos classes et étudiants</p>

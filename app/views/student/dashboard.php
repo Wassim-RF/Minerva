@@ -6,7 +6,7 @@
 <?php 
     require_once __DIR__ . '/../../views/layout/navbar.php' 
 ?>
-<main class="w-[83%] p-10" id="mainbody">
+<main class="w-[83%] ml-[17%] p-10" id="mainbody">
             <header class="mb-8">
                 <h1 class="text-3xl font-bold">Bienvenue, a dik l 3ebd</h1>
                 <p class="text-slate-500">Voici un aperçu de vos activités</p>
