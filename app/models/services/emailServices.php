@@ -33,7 +33,7 @@
                 $this->mail->addAddress($to);
 
                 $this->mail->isHTML(true);
-                $this->mail->Subject = "Votre Menerva Password";
+                $this->mail->Subject = "Votre Menerva mot de passe";
                 $this->mail->Body    = "
                     <h2>Bonjour,</h2>
 
