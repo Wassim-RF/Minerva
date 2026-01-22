@@ -8,12 +8,14 @@
     require_once __DIR__ . '/../app/controller/authController.php';
     require_once __DIR__ . '/../app/controller/classController.php';
     require_once __DIR__ . '/../app/controller/teacherController.php';
+    require_once __DIR__ . '/../app/controller/studentController.php';
 
     use App\Core\Router;
     use App\Controller\UserController;
     use App\Controller\AuthController;
     use App\Controller\ClassController;
     use App\Controller\TeacherController;
+    use App\Controller\StudentController;
 
     $router = new Router();
 
@@ -30,5 +32,7 @@
     $router->add("GET" , "/teacher/classe/ajouteStudent" , [ClassController::class , 'showAjouteStudent']);
     $router->add("POST" , "/classes/add" , [ClassController::class , 'addNewClass']);
     $router->add("POST" , "/teacher/createStudent" , [TeacherController::class , 'ajouteNewStudent']);
+    $router->add("GET" , "/student/dashboard" , [StudentController::class , 'showStudentDashboard']);
+    $router->add("GET" , "/student/classes" , [StudentController::class , 'showStudentClasses']);
 
     $router->dispatch();
