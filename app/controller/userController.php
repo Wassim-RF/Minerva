@@ -1,7 +1,7 @@
 <?php
     namespace App\Controller;
 
-    require_once __DIR__ . '/../models/repositories/classReposeteries.php';
+    require_once __DIR__ . '/../models/repositories/classRepositories.php';
     require_once __DIR__ . '/../models/services/classServices.php';
 
     use App\Models\Repositories\ClassRepositories;

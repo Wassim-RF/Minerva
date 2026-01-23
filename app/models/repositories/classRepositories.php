@@ -40,4 +40,18 @@
             $stmt->execute([$teacher_id]);
             return $stmt->fetchColumn();
         }
+
+        public function getClassMembersByStudent(int $studentId): array
+{
+    $stmt = $this->db->prepare("
+        SELECT c.name AS class_name, u.name, u.email
+        FROM classroom c
+        JOIN classeStudent cs ON cs.class_id = c.id
+        JOIN users u ON u.id = cs.student_id
+        WHERE cs.student_id = :studentId
+    ");
+
+    $stmt->execute(['studentId' => $studentId]);
+    return $stmt->fetchAll(\PDO::FETCH_ASSOC);
+}
     }
