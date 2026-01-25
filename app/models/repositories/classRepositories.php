@@ -43,7 +43,7 @@
 
         public function getClassMembersByStudent(int $studentId): array
 {
-    $stmt = $this->db->prepare("
+    $stmt = $this->pdo->prepare("
         SELECT c.name AS class_name, u.name, u.email
         FROM classroom c
         JOIN classeStudent cs ON cs.class_id = c.id
