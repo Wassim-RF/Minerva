@@ -18,7 +18,7 @@
             $this->mail->Host = 'smtp.gmail.com';
             $this->mail->SMTPAuth   = true;
             $this->mail->Username   = 'menerva005@gmail.com'; // بدّلها
-            $this->mail->Password   = 'wzqo yrvu lfnk tktd';         // App Password
+            $this->mail->Password   = 'wzqo yrvu lfnk tktd';
             $this->mail->SMTPSecure = 'tls';
             $this->mail->Port       = 587;
 

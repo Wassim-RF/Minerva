@@ -91,3 +91,18 @@ CREATE TABLE IF NOT EXISTS chat_messages (
 
 --@block
 SELECT DISTINCT u.id, u.name FROM users u JOIN class_students cs ON u.id = cs.student_id JOIN classes c ON cs.class_id = c.id WHERE c.teacher_id = 5 AND u.role = 'student';
+
+--@block
+SELECT 
+    c.id AS class_id,
+    c.name AS class_name,
+    u.name AS teacher_name,
+    COUNT(cs.student_id) AS student_count
+FROM classes c
+JOIN users u ON c.teacher_id = u.id
+LEFT JOIN class_students cs ON c.id = cs.class_id
+GROUP BY c.id, c.name, u.name
+ORDER BY c.id;
+
+--@block
+SELECT COUNT(cs.student_id) FROM users u JOIN classes c ON c.teacher_id = u.id LEFT JOIN class_students cs ON cs.class_id = c.id WHERE u.role = 'teacher' AND u.id = 5  GROUP BY u.id, u.name;
