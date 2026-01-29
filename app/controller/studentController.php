@@ -31,4 +31,14 @@ class StudentController {
             require_once __DIR__ . '/../views/student/class.php';
         }
     }
+
+    public function works() {
+    $works = $this->studentService->getWorks($_SESSION['user_id']);
+    require "../app/views/student/works.php";
+    }
+
+    public function submitWork() {
+    $this->studentService->submitWork($_POST, $_FILES);
+    header("Location: /student/works");
+    }
 }

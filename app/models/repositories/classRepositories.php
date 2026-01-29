@@ -53,4 +53,12 @@
             $stmt->execute(['studentId' => $studentId]);
             return $stmt->fetchAll(PDO::FETCH_ASSOC);
         }
+
+        public function create($assignmentId, $studentId, $content, $filePath) {
+        $stmt = $this->db->prepare("
+        INSERT INTO submissions (assignment_id, student_id, content, file_path)
+        VALUES (?, ?, ?, ?)
+        ");
+        $stmt->execute([$assignmentId, $studentId, $content, $filePath]);
+        }
     }
